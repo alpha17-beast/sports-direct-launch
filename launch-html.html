@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download NSES Sports App</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        royal: '#1e3a8a',
+                        dark: '#0a192f',
+                        gold: '#FFD700',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a192f;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%);
+            color: white;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gold-text {
+            background: linear-gradient(to right, #BF953F, #FCF6BA, #AA771C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-btn {
+            background: linear-gradient(45deg, #FFD700, #FDB931);
+            color: #0a192f;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+    <!-- Main Container -->
+    <div class="max-w-md w-full space-y-8 text-center">
+        
+        <!-- Logo Area -->
+        <div class="flex justify-center mb-6">
+            <div class="w-24 h-24 rounded-3xl bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center shadow-lg shadow-yellow-500/20">
+                <span class="text-4xl font-bold text-royal font-serif">N</span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="space-y-2">
+            <h1 class="text-3xl font-bold tracking-tight">NSES SPORTS</h1>
+            <p class="text-gray-400 text-sm tracking-widest uppercase">The Official School App</p>
+        </div>
+
+        <!-- Download Card -->
+        <div class="glass-card rounded-2xl p-6 relative overflow-hidden">
+            <!-- Glow Effect -->
+            <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 blur-3xl -z-10"></div>
+
+            <h2 class="text-xl font-bold mb-4">Get the App</h2>
+            <p class="text-gray-300 text-sm mb-6">
+                Install the official APK to access live scores, news, and gallery without any browser bars.
+            </p>
+
+            <!-- DOWNLOAD BUTTON -->
+            <!-- IMPORTANT: Make sure the href matches your APK file name -->
+            <a href="https://www.dropbox.com/scl/fi/7ea2m9wobqpezip3zmvjd/NSES-SPORTS-HUB.apk?rlkey=89jcuq6dfbs41lnqz75grnk5n&st=ghayuoj4&dl=1" download class="gold-btn w-full py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-3 transition transform hover:scale-105 active:scale-95">
+                <i class="fab fa-android text-2xl"></i>
+                Download APK
+            </a>
+            
+            <p class="text-xs text-gray-500 mt-4">
+                *If you see a warning, click "Install Anyway". This is an internal school app.
+            </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="grid grid-cols-2 gap-4">
+            <div class="glass-card p-4 rounded-xl text-center">
+                <i class="fas fa-trophy text-yellow-400 text-2xl mb-2"></i>
+                <h3 class="font-bold text-sm">Live Points</h3>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <i class="fas fa-newspaper text-blue-400 text-2xl mb-2"></i>
+                <h3 class="font-bold text-sm">School News</h3>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <i class="fas fa-calendar-alt text-green-400 text-2xl mb-2"></i>
+                <h3 class="font-bold text-sm">Events</h3>
+            </div>
+            <div class="glass-card p-4 rounded-xl text-center">
+                <i class="fas fa-images text-purple-400 text-2xl mb-2"></i>
+                <h3 class="font-bold text-sm">Gallery</h3>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="pt-8 border-t border-white/10">
+            <p class="text-xs text-gray-500 mb-2">Made with <span class="text-red-500">❤️</span> by</p>
+            <p class="font-bold text-sm tracking-wider text-white">ALPHA DEVELOPING CO. PVT LTD.</p>
+            <a href="https://alpha17-beast.github.io/Portfolio/" target="_blank" class="inline-block mt-3 text-xs text-yellow-500 border border-yellow-500/30 px-3 py-1 rounded-full hover:bg-yellow-500/10 transition">
+                Visit Developer Portfolio
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
